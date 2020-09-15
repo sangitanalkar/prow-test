@@ -1,0 +1,8 @@
+plugins:
+  sangitanalkar/prow-test: 
+  - size
+  - skip # /skip
+  - lgtm # /lgtm
+  - assign # /assign @user, /cc @user
+  - approve # /approve
+  - trigger # /trigger
