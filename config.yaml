@@ -1,13 +1,13 @@
 periodics:
 - interval: 10m
-  name: echo-test
+  name: echo-testjob
   decorate: true
   spec:
     containers:
     - image: alpine
       command: ["/bin/date"]
 presubmits:
-  Devops-continens/Prow-tutorial:
+  sangitanalkar/prow-test:
   - name: test-presubmit
     always_run: true
     skip_report: true
