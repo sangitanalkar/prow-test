@@ -6,3 +6,4 @@ plugins:
   - assign # /assign @user, /cc @user
   - approve # /approve
   - trigger # /trigger
+  - cat
