@@ -1,25 +1,3 @@
-# Presets
-presets:
-  - labels:
-      preset-dind-enabled: "true"
-    env:
-    - name: DOCKER_IN_DOCKER_ENABLED
-      value: "true"
-  - labels:
-      preset-docker-credentials: "true"
-    env:
-    - name: DOCKER_USER
-      valueFrom:
-        secretKeyRef:
-          name: docker-creds
-          key: user
-    env:
-    - name: DOCKER_PASS
-      valueFrom:
-        secretKeyRef:
-          name: docker-creds
-          key: password      
-
 # Sinker configurations (for cleanup)
 sinker:
   resync_period: 1m
