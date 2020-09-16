@@ -1,0 +1,19 @@
+# Default Labels template for jobs
+job_labels_template: &job_labels_template
+  preset-dind-enabled: "true"
+
+branch_spec: &branch_spec
+- "^master$"
+
+# Presubmit jobs
+presubmits:
+  sangitanalkar/prow-test:
+  - name: pull-job
+    always_run: true
+    decorate: true
+    spec:
+      containers:
+      - image: s390x/ubuntu:latest
+        imagePullPolicy: IfNotPresent
+        command:
+        - "pwd"
