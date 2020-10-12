@@ -7,3 +7,5 @@ plugins:
   - approve # /approve
   - trigger # /trigger
   - help # /help
+  - cat
+  - dog
